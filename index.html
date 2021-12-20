@@ -8,6 +8,7 @@
 </head>
 <body>
     <h1 id="head">i will cahnge my text</h1>
+    <h1 style="color: green;" id="cal"></h1>
     <script>
         // call abck function is a function which takes another function as
         // a argument so you also have to pass it in the first function as a parameter
@@ -32,8 +33,21 @@
         function fifth(panchwa){
             panchwa;
         }
-        fifth(third("i am the forth practice of call back function and i am inside the fifth fun"))
-        
+        fifth(third("i am the forth practice of call back function and i am inside the fifth fun"));
+        console.clear();
+        function displayFinal(val1){
+            let cal=document.getElementById("cal");
+            cal.innerHTML=val1;
+        }
+        function addingNum(n,m){
+            let sum=m+n;
+            return sum;
+        }
+        let sumVal= addingNum(34,56.1);
+        function result(added){
+            displayFinal(added);
+        }
+        result(sumVal);
 
         
     </script>
