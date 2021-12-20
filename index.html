@@ -7,6 +7,7 @@
     <title>Call Back Functions</title>
 </head>
 <body>
+    <h1 id="head">i will cahnge my text</h1>
     <script>
         // call abck function is a function which takes another function as
         // a argument so you also have to pass it in the first function as a parameter
@@ -17,6 +18,16 @@
             first;
         }
         sec(first());
+        // 
+        function third(){
+            let head=document.getElementById("head");
+            head.innerHTML="i am the third fun of sec practice";
+        }
+        function forth(charNumber){
+            charNumber;
+        }
+        forth(third())
+
         
     </script>
 </body>
